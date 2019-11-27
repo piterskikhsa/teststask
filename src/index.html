@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.min.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=c9b82fd3-a162-476e-b9f5-aeddfd052eaa&lang=ru_RU"
+		type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="instrments frame" data-id='instrments'>
+				<div class="instrments__header frame__header">
+					<div class="frame__left-wrapper">
+						<h6 class="frame__title">Список приборов</h6>
+						<div class="frame__pages frame__filter-border">
+							<span class="page_left"></span>
+							<span class="current_page">1</span> из <span class="pages">11</span>
+							<span class="page_right"></span></div>
+						<div class="frame__filter frame__filter-border">filter <span class="filter"></span></div>
+					</div>
+					<div class="control">
+						<span class="control__btn control__collapse"></span>
+						<span class="control__btn control__expand"></span>
+						<span class="control__btn control__close"></span>
+					</div>
+				</div>
+				<div class="frame__body">
+					<table class="instrments__table frame__table">
+						<thead>
+							<tr>
+								<th>Имя прибора</th>
+								<th>Тип прибора</th>
+								<th>Местоположение</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+			<div class="events frame" data-id='events'>
+				<div class="events__header frame__header">
+					<div class="frame__left-wrapper">
+						<h6 class="frame__title">События</h6>
+						<div class="frame__pages frame__filter-border">
+							<span class="page_left"></span>
+							<span class="current_page">1</span> из <span class="pages">11</span>
+							<span class="page_right"></span></div>
+						<div class="frame__filter frame__filter-border">filter <span class="filter"></span></div>
+					</div>
+					<div class="control">
+						<span class="control__btn control__collapse"></span>
+						<span class="control__btn control__expand"></span>
+						<span class="control__btn control__close"></span>
+					</div>
+				</div>
+				<div class="frame__body">
+					<table class="events__table frame__table">
+						<thead>
+							<tr>
+								<th>Тип события</th>
+								<th>Время события</th>
+								<th><span class="green block">I1 макс</span><span class="red">I1 мин</span></th>
+								<th><span class="green block">I2 макс</span><span class="red">I2 мин</span></th>
+								<th><span class="green block">I3 макс</span><span class="red">I3 мин</span></th>
+								<th><span class="green block">U1 макс</span><span class="red">U1 мин</span></th>
+								<th><span class="green block">U2 макс</span><span class="red">U2 мин</span></th>
+								<th><span class="green block">U3 макс</span><span class="red">U3 мин</span></th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+			<div class="seances frame" data-id='seances'>
+				<div class="seances__header frame__header">
+					<div class="frame__left-wrapper">
+						<h6 class="frame__title">Сеансы</h6>
+						<div class="frame__pages frame__filter-border">
+							<span class="page_left"></span>
+							<span class="current_page">1</span> из <span class="pages">11</span>
+							<span class="page_right"></span></div>
+						<div class="frame__filter frame__filter-border">filter <span class="filter"></span></div>
+					</div>
+					<div class="control">
+						<span class="control__btn control__collapse"></span>
+						<span class="control__btn control__expand"></span>
+						<span class="control__btn control__close"></span>
+					</div>
+				</div>
+			</div>
+			<div class="instrument_settings frame" data-id='instrument_settings'>
+				<div class="instrument_settings__header frame__header">
+					<h6 class="frame__title">Настройка прибора</h6>
+					<div class="control">
+						<span class="control__btn control__collapse"></span>
+						<span class="control__btn control__expand"></span>
+						<span class="control__btn control__close"></span>
+					</div>
+				</div>
+				<div class="frame__body">
+					<table class="frame__table">
+						<thead>
+							<tr>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tr>
+							<td>Текст1</td>
+							<td>Текст1</td>
+						</tr>
+						<tr>
+							<td>Текст2</td>
+							<td>Текст2</td>
+						</tr>
+						<tr>
+							<td>Текст3</td>
+							<td>Текст3</td>
+						</tr>
+						<tr>
+							<td>Текст4</td>
+							<td>Текст4</td>
+						</tr>
+						<tr>
+							<td>Текст5</td>
+							<td>Текст5</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="map frame" data-id='map'>
+				<div class="map__header frame__header">
+					<h6 class="frame__title">Карта</h6>
+					<div class="control">
+						<span class="control__btn control__collapse"></span>
+						<span class="control__btn control__expand"></span>
+						<span class="control__btn control__close"></span>
+					</div>
+				</div>
+				<div id="map" class="map-inner"></div>
+			</div>
+		</div>
+		<footer class="footer">
+			<img src="/img/@2x/logo.png" alt="logo" class="logo" />
+			<p class="contact">Московская область, г. Фрязино, а/я 2205, 141195</p>
+			<p class="phone">+7(495) 991 12 30 8 800 500 17 92</p>
+			<p class="mail">support@antraks.ru <span class="grey">Техническая поддержка</span></p>
+		</footer>
+	</div>
+</body>
+
+<script src="js/scripts.min.js"></script>
+
+</html>

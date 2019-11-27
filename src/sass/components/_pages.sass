@@ -1,0 +1,46 @@
+.page
+    &_left
+        left: 0
+
+        &::before
+            transform: rotate(-45deg) translateY(-50%)
+
+        &::after
+            transform: rotate(45deg) translateY(-50%)
+
+        &::before,&::after
+            content: ''
+            position: absolute
+            width: 6px
+            height: 1px
+            right: 10px
+            top: 50%
+            transform-origin: left top
+            background-color: $controlsColor
+    &_right
+        right: 0
+
+        &::before
+            transform: rotate(45deg) translateY(-50%)
+
+        &::after
+            transform: rotate(-45deg) translateY(-50%)
+
+        &::before,&::after
+            content: ''
+            position: absolute
+            width: 6px
+            height: 1px
+            left: 10px
+            top: 50%
+            transform-origin: right top
+            background-color: $controlsColor
+
+    &_left,&_right
+        cursor: pointer
+        display: block
+        top: 50%
+        transform: translateY(-50%)
+        position: absolute
+        width: 30px
+        height: 100%
